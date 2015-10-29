@@ -1,0 +1,165 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+body {
+
+}
+
+header {
+
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 10px 0 10px 0;
+}
+
+.headWrapper {
+  @include outer-container(985px);
+
+}
+.homeLink .octicon-mark-github {
+  width: 28px;
+  height: 28px;
+  font-size: 28px;
+}
+.nav1 {
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav2 {
+  float: right;
+  position: relative;
+  top: 5px;
+  .bell  .octicon-bell {
+      width: 32px;
+      font-size: 16px;
+      text-align: center;
+    }
+  .bell {
+      position: relative;
+      bottom: 5px;
+    }
+  .plus  {
+    position: relative;
+    bottom: 5px;
+    width: 41px;
+    }
+  .plus .octicon-plus {
+    width: 16px;
+    font-size: 16px;
+  }
+  .plus .octicon-triangle-down {
+    width: 6px;
+    font-size: 10px;
+  }
+
+  .profileNav .octicon-triangle-down {
+    width: 6px;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+  }
+}
+.searchBar {
+  margin-left: 11px;
+  width: 360px;
+  height: 100%;
+  position: relative;
+  bottom: 3px;
+
+}
+.av2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+}
+
+
+main {
+  @include outer-container(985px);
+  margin-top: 20px;
+}
+
+// main body
+
+.main {
+  @include span-columns(9 of 12);
+  @include omega;
+}
+
+.repoTab {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  border-radius: 3px 3px 0 0;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+}
+
+.repoSearch {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+// side panel
+.profileInfo {
+  @include span-columns(3 of 12);
+}
+
+.avatar {
+  height: 230px;
+  width: 230px;
+  border-radius: 6px;
+}
+
+
+
+.userName {
+  font-size: 1.3em;
+}
+
+.joinDate {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.date {
+  font-size: .7em;
+}
+
+.popCount {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  a {
+    text-decoration: none;
+  }
+  .followers, .starred, .following {
+    float: left;
+    width: 33.333%;
+  }
+  strong {
+    font-size: 30px;
+  }
+  span {
+    font-size: 11px;
+    color: gray;
+  }
+}
+
+.orgBox {
+  margin-top: 40px;
+  border-top: 1px solid gray;
+}

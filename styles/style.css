@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+header {
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 10px 0 10px 0; }
+
+.headWrapper {
+  max-width: 985px;
+  margin-left: auto;
+  margin-right: auto; }
+  .headWrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.homeLink .octicon-mark-github {
+  width: 28px;
+  height: 28px;
+  font-size: 28px; }
+
+.nav1 {
+  display: inline-block;
+  position: relative;
+  bottom: 3px; }
+  .nav1 a {
+    text-decoration: none; }
+
+.nav2 {
+  float: right;
+  position: relative;
+  top: 5px; }
+  .nav2 .bell .octicon-bell {
+    width: 32px;
+    font-size: 16px;
+    text-align: center; }
+  .nav2 .bell {
+    position: relative;
+    bottom: 5px; }
+  .nav2 .plus {
+    position: relative;
+    bottom: 5px;
+    width: 41px; }
+  .nav2 .plus .octicon-plus {
+    width: 16px;
+    font-size: 16px; }
+  .nav2 .plus .octicon-triangle-down {
+    width: 6px;
+    font-size: 10px; }
+  .nav2 .profileNav .octicon-triangle-down {
+    width: 6px;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px; }
+
+.searchBar {
+  margin-left: 11px;
+  width: 360px;
+  height: 100%;
+  position: relative;
+  bottom: 3px; }
+
+.av2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px; }
+
+main {
+  max-width: 985px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px; }
+  main::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.main {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-right: 0; }
+  .main:last-child {
+    margin-right: 0; }
+
+.repoTab {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  border-radius: 3px 3px 0 0;
+  border: 1px solid #ddd;
+  border-bottom: 0; }
+
+.repoSearch {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray; }
+
+.profileInfo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .profileInfo:last-child {
+    margin-right: 0; }
+
+.avatar {
+  height: 230px;
+  width: 230px;
+  border-radius: 6px; }
+
+.userName {
+  font-size: 1.3em; }
+
+.joinDate {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray; }
+
+.date {
+  font-size: .7em; }
+
+.popCount {
+  padding-top: 17px;
+  padding-bottom: 17px; }
+  .popCount a {
+    text-decoration: none; }
+  .popCount .followers, .popCount .starred, .popCount .following {
+    float: left;
+    width: 33.333%; }
+  .popCount strong {
+    font-size: 30px; }
+  .popCount span {
+    font-size: 11px;
+    color: gray; }
+
+.orgBox {
+  margin-top: 40px;
+  border-top: 1px solid gray; }
+
+/*# sourceMappingURL=style.css.map */

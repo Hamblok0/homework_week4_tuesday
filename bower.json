@@ -1,0 +1,25 @@
+{
+  "name": "tuesday",
+  "version": "0.0.0",
+  "authors": [
+    "Joseph Cooper <hambloko@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2",
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3",
+    "octicons": "~3.1.0"
+  }
+}

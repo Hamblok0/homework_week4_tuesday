@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css" >
+  </head>
+    <body>
+      <header>
+        <section class="headWrapper">
+
+        <a class="homeLink" href="#"><span class="mega-octicon octicon-mark-github"></span></a>
+        <input class="searchBar" type="text" name="name" placeholder="Search Github" value="">
+        <nav class="nav1">
+          <a href="#">Pull requests</a>
+          <a href="#">Issues</a>
+          <a href="#">Gist</a>
+        </nav>
+        <nav class="nav2">
+          <a class="bell" href="#"><span class="mega-octicon octicon-bell"></span></a>
+          <a class="plus" href="#"><span class="mega-octicon octicon-plus"></span><span class="mega-octicon octicon-triangle-down"></span></a>
+          <a class="profileNav" href="#"><img class="av2"><span class="mega-octicon octicon-triangle-down"></span></a>
+        </nav>
+        </section>
+      </header>
+      <main>
+        <aside class="profileInfo">
+          <img class="avatar">
+          <span class="userName"></span>
+          <div class="joinDate">
+            <span class="octicon octicon-clock"><span class="date">Joined on </span></span>
+          </div>
+            <div class="popCount">
+              <a class="followers" href="#">
+                <strong class="vcardfol"></strong>
+                <span>Followers</span>
+              </a>
+              <a class="starred" href="#">
+                <strong class="vcardstar"></strong>
+                <span>Starred</span>
+              </a>
+              <a class="following" href="#">
+                <strong class="vcardfoling"></strong>
+                <span>Following</span>
+              </a>
+            </div>
+            <div class="orgBox">
+              <h3>Organizations</h3>
+            </div>
+        </aside>
+        <section class="main">
+          <div class="tabnavigation">
+            <a class=repoTab href="#">
+              <span class="octicon octicon-repo"></span>
+              Repositories
+            </a>
+          </div>
+          <div class="repoSearch">
+            <input type="text" name="name" value="" placeholder="Find a repository...">
+            <input type="button" name="name" value="Search">
+            <div class="searchNarrow">
+              <a href="#">All</a>
+              <a href="#">Public</a>
+              <a href="#">Private</a>
+              <a href="#">Sources</a>
+              <a href="#">Forks</a>
+              <a href="#">Mirrors</a>
+              <a href="#">New</a>
+            </div>
+          </div>
+          <div class="repoList">
+
+          </div>
+        </section>
+      </main>
+      <footer>
+
+      </footer>
+<script type="text/javascript" src="token.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
