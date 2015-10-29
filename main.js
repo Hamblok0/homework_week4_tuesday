@@ -45,6 +45,8 @@ $.getJSON(url2).done(function(data){
       + '<span class="octicon octicon-git-branch"></span>' + repo.forks + '</div>' + '<p>Updated ' + repo.updated_at + '</p>'
 
      );
+      var repoURL = repo.url;
+      $('.repoLink').attr("href", repoURL);
       repoDiv.append(article);
 
     });
