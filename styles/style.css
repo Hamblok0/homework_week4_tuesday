@@ -123,6 +123,14 @@ main {
   padding-bottom: 17px;
   border-top: 1px solid #DDDDDD;
   border-bottom: 1px solid #DDDDDD; }
+  .repoSearch .new {
+    color: white;
+    background-color: #88DB6B;
+    border: 1px solid #5CA941;
+    border-radius: 3px;
+    padding: 10px 12px 10px 12px; }
+    .repoSearch .new .octicon, .repoSearch .new .octicon-repo {
+      margin-right: 5px; }
   .repoSearch .searchBar2 {
     height: 35px;
     width: 260px;
@@ -215,10 +223,20 @@ main {
     float: left;
     width: 33.333%; }
   .popCount strong {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-left: 20px;
+    color: #4078C0; }
   .popCount span {
     font-size: 11px;
-    color: gray; }
+    color: gray;
+    position: relative;
+    bottom: 10px; }
+  .popCount .spanFol {
+    left: 5px; }
+  .popCount .spanStar {
+    left: 10px; }
+  .popCount .spanFoling {
+    left: 5px; }
 
 .orgBox {
   margin-top: 40px;
