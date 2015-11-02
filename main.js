@@ -31,31 +31,34 @@ $.getJSON(url).done(function(data) {
 
   var following = data.following;
   $('.vcardfoling').append(following);
+
+  var followersLink = "https://github.com/" + username + "/followers";
+  $('.followers').attr("href", followersLink);
+
+  var starsLink = "https://github.com/stars";
+  $('.starred').attr("href", starsLink);
+
+  var followingLink = "https://github.com/" + username + "/following";
+  $('.following').attr("href", followingLink);
 });
 
 $.getJSON(url2).done(function(data){
 
   var displayRepos = function(entries) {
     entries.forEach(function(repo) {
-      var theTimeDude = moment(repo.updated_at).format('ll');
+
       var repoDiv = $('.repoList');
-      var article = $(
-      '<article class="repo">' + '<a class="repoLink">' + repo.name + '</a>' + '<div class= "repoStats">' + '<span class="language">' + repo.language +
-      '</span>' + '<span class="star">' + '<span class="octicon octicon-star"></span>' + repo.stargazers_count + '</span>' + '<span class="fork">'
-      + '<span class="octicon octicon-git-branch"></span>' + repo.forks + '</div>' + '<p class="updateText">Updated ' + theTimeDude + '</p>'
-     );
-      var repoURL = repo.url;
+
+      var repositoryList = $('#repositoryList');
+      var repoTemplate = repositoryList.html();
+      var compiledRepoTemplate = _.template(repoTemplate);
+
+      var repoURL = "http://github.com/" + repo.full_name;
       $('.repoLink').attr("href", repoURL);
-      repoDiv.append(article);
 
-
+      repoDiv.append(compiledRepoTemplate(repo));
 
     });
   }
   displayRepos(data);
 });
-
-$.getJSON(urlOrg).done(function(data){
-  console.log(data);
-
-})

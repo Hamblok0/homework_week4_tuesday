@@ -11,7 +11,7 @@
       <header>
         <section class="headWrapper">
 
-        <a class="homeLink" href="#"><span class="mega-octicon octicon-mark-github"></span></a>
+        <a class="homeLink" href="https://github.com/"><span class="mega-octicon octicon-mark-github"></span></a>
         <input class="searchBar" type="text" name="name" placeholder="Search Github" value="">
         <nav class="nav1">
           <a href="https://github.com/pulls">Pull requests</a>
@@ -35,15 +35,15 @@
             <div class="popCount">
               <a class="followers" href="#">
                 <strong class="vcardfol"></strong>
-                <span>Followers</span>
+                <span class="spanFol">Followers</span>
               </a>
               <a class="starred" href="#">
                 <strong class="vcardstar"></strong>
-                <span>Starred</span>
+                <span class="spanStar">Starred</span>
               </a>
               <a class="following" href="#">
                 <strong class="vcardfoling"></strong>
-                <span>Following</span>
+                <span class="spanFoling">Following</span>
               </a>
             </div>
             <div class="orgBox">
@@ -67,7 +67,7 @@
               <a href="#">Sources</a>
               <a href="#">Forks</a>
               <a href="#">Mirrors</a>
-              <a href="#">New</a>
+              <a class="new" href="#"><span class="octicon octicon-repo"></span>New</a>
             </div>
           </div>
           <div class="repoList">
@@ -81,6 +81,25 @@
 <script type="text/javascript" src="token.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+<script type="text/template" id="repositoryList">
+  <article class="repo">
+    <a class="repoLink" href=""><%= name %></a>
+    <div class="repoStats">
+      <span class="language"><%= language %></span>
+      <span class="star">
+        <span class="octicon octicon-star"></span>
+        <%= stargazers_count %>
+      </span>
+      <span class="fork">
+        <span class="octicon octicon-git-branch"></span>
+        <%= forks %>
+    </div>
+    <p class="updateText">
+      Updated <%= moment(updated_at).format('ll') %>
+    </p>
+  </article>
+</script>
 <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
